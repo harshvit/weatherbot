@@ -6,9 +6,16 @@ var type = "Sunny";
 
 app.post("/", function (req, res) {
 
-    responseTxt = "Welcome to WeatherBot! Weather in " + req.body.result.parameters['geo-city'] + " is " + type +
-                    ". (Temperature: " + temp +")";
+    var responseTxt = "";
+    if(req.body.result.parameters['geo-city']) {
 
+        var city = req.body.result.parameters['geo-city'];
+        responseTxt = "Welcome to WeatherBot! Weather in " + city + " is " + type +
+            ". (Temperature: " + temp + ")";
+    }
+    else {
+        responseTxt = "Weather of which city dude ?";
+    }
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({
         "speech" : responseTxt ,
