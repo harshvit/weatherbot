@@ -6,7 +6,7 @@ var type = "Sunny";
 
 app.post("/", function (req, res) {
 
-    responseTxt = "Welcome to WeatherBot! Weather in " + req.body.result.parameters['geo-city'] + " is " + type +
+    responseTxt = "Welcome to WeatherBot! Weather in   is " + type +
                     ". (Temperature: " + temp +")";
 
     res.setHeader('Content-Type', 'application/json');
