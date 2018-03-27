@@ -6,5 +6,8 @@ app.post("/", function (req, res) {
 })
 
 app.listen(process.env.PORT||3000 , function(){
-    console.log("Started WeatherBot server at port 3000");
+    console.log(JSON.stringify({
+        "response" : "Started WeatherBot server at port 3000" ,
+        "error" : null
+    }));
 });
