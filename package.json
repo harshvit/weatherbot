@@ -2,8 +2,9 @@
   "name": "weatherbot",
   "version": "0.0.0",
   "private": true,
+  "main": "routes/index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node routes/index.js"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
