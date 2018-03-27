@@ -1,5 +1,8 @@
 var express = require('express');
 var app = express();
+var bodyParse = require("body-parser");
+var router = express.Router();
+app.use(bodyParse.json());
 
 var temp = 32;
 var type = "Sunny";
