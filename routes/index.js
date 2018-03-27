@@ -2,10 +2,12 @@ var express = require('express');
 var app = express();
 
 app.post("/", function (req, res) {
-    res.setHeader('Content-Type', 'application/json');
 
+    responseTxt = "Welcome to WeatherBot";
+    res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify({
-        "response" : "Started WeatherBot server at port 3000" ,
+        "speech" : responseTxt ,
+        "displayText" : responseTxt ,
         "error" : null
     }));
 })
