@@ -5185,7 +5185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522129954526</updated>
-      <workItem from="1522129955930" duration="13118000" />
+      <workItem from="1522129955930" duration="13165000" />
     </task>
     <task id="LOCAL-00001" summary="change in package.json">
       <created>1522137601436</created>
@@ -5275,7 +5275,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13118000" />
+    <option name="totallyTimeSpent" value="13165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
