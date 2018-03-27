@@ -39,6 +39,7 @@ app.post("/firebase", function (req, res) {
         messagingSenderId: "211237132579"
     };
     fireBase.initializeApp(config);
+    var database = fireBase.database();
 
 });
 
