@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-var temp = 32
-var type = "Sunny"
+var temp = 32;
+var type = "Sunny";
 
 app.post("/", function (req, res) {
 
