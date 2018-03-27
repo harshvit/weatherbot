@@ -1,7 +1,8 @@
 var express = require('express');
-var app = express();
 var bodyParse = require("body-parser");
+var fireBase = require("firebase");
 var router = express.Router();
+var app = express();
 app.use(bodyParse.json());
 
 var temp = 32;
@@ -25,7 +26,21 @@ app.post("/", function (req, res) {
         "displayText" : responseTxt ,
         "error" : null
     }));
-})
+});
+
+app.post("/firebase", function (req, res) {
+
+    var config = {
+        apiKey: "AIzaSyCpDouoQQhw85V7uND3Fu4vpHXP4hkRsCs",
+        authDomain: "my-weather-ca03d.firebaseapp.com",
+        databaseURL: "https://my-weather-ca03d.firebaseio.com",
+        projectId: "my-weather-ca03d",
+        storageBucket: "my-weather-ca03d.appspot.com",
+        messagingSenderId: "211237132579"
+    };
+    fireBase.initializeApp(config);
+
+});
 
 app.listen(process.env.PORT||3000 , function(){
     console.log("Started server !");
