@@ -7,6 +7,8 @@ var router = express.Router();
 const app = express();
 app.use(bodyParse.json());
 
+var db = tools.getFireStore()
+
 app.post("/botPeter", function (req, res) {
     var result = JSON.parse(fs.readFileSync('../json/data.json'));
 
