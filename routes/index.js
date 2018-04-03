@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParse = require("body-parser");
-const tools = require("../public/javascripts/getPropertyTools");
+// const tools = require("../public/javascripts/getPropertyTools");
 const fs = require('fs');
 const fireBase = require("firebase");
 var router = express.Router();
